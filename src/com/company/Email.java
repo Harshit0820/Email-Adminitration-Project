@@ -30,8 +30,6 @@ public class Email {
                 + "." + this.lastName.toLowerCase()
                 + "@" + department + companySuffix + "\nPASSWORD IS: " + password
                 + "\nWITH MAIL CAPACITY OF: " + this.defaultMailboxCapacity + " Mails");
-        setAlternateEmail("hb@gmail.com");
-        System.out.println("Alternate Email is: " + getAlternateEmail());
 
         System.out.println("--------------------------------------");
         changePassword();
@@ -76,7 +74,7 @@ public class Email {
 
 
     private void changePassword() {
-        System.out.println("TO CHANGE PASSWORD PRESS 9:");
+        System.out.println("TO CHANGE PASSWORD PRESS 9 OR ANY NUMBER TO CONTINUE:");
         Scanner in = new Scanner(System.in);
         int pChange = in.nextInt();
         if (pChange == 9) {
